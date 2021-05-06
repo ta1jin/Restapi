@@ -1,0 +1,26 @@
+#add a category
+curl http://localhost:5000/category \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"name":"Post 1", "costs":"100"}'
+
+#add a product
+curl http://localhost:5000/products \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"arcticle":"Post 1", "name":"100", "weight":"10.2", "cost":"10","cat_id":"1"}'
+
+#get a products list
+curl http://localhost:5000/products
+
+#get a product
+curl http://localhost:5000/product/1
+
+#update a product
+curl http://localhost:5000/product/1 \
+    -X PATCH \
+    -H "Content-Type: application/json" \
+    -d '{"title":"Updated Post", "content":"Updated post content"}'
+
+#delete a product
+curl http://localhost:5000/product/1 -X DELETE -I

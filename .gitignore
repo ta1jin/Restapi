@@ -1,0 +1,21 @@
+.idea/
+*.pyc
+
+# Config files
+*.cfg
+
+# Database
+test.db
+db/
+migrations/
+
+#  Virtual environment
+env/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Pytest
+.pytest_cache/
+__pycache__
